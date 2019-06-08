@@ -1,0 +1,24 @@
+﻿@using RoutineBuilder.Admin.Models
+@model LoginModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <form asp-action="login" method="post">
+        <div asp-validation-summary="All"></div>
+        UserName : <input type="text" asp-for="UserName" />
+        <br />
+        Password : <input type="password" asp-for="Password" />
+        <br />
+        <input type="submit" value="Login" />
+    </form>
+</body>
+</html>
